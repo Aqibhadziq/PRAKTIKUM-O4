@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout HTML5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logonf.png">
+    <h1>STT TERPADU NURUL FIKRI</h1>
+  </header>
+
+  <nav>
+    <a href>info@nurulfikri.ac.id</a>
+    <a href=>085716243174</a>
+    <a href=>021-786.3191</a>
+  </nav>
+
+  <main>
+    <article id="article-container">
+      <h2 id="judul-artikel">Daftar Artikel</h2>
+      <div id="article-list">
+        <section onclick="bukaArtikel('https://id.wikipedia.org/wiki/Sekolah_Tinggi_Teknologi_Nurul_Fikri')">
+          <h3>Wikipedia STT NF</h3>
+        </section>
+
+        <section onclick="bukaArtikel('https://nurulfikri.ac.id/sttnf/profil-sttnf/')">
+          <h3>Profil STT NF</h3>
+        </section>
+
+        <section onclick="bukaArtikel('https://nurulfikri.ac.id/teknik-informatika/')">
+          <h3>Teknik Informatika STT NF</h3>
+        </section>
+      </div>
+
+      <div id="iframe-container">
+        <iframe id="artikel-frame" src="" frameborder="0"></iframe>
+        <button onclick="kembali()">Kembali</button>
+      </div>
+    </article>
+
+    <aside>
+      <h3>Kampus STT NF</h3>
+      <img src="gedungnf.jpg">
+      <img src="gedungsnf.jpg">
+    </aside>
+  </main>
+
+  <footer>
+    &copy; TENTANG STT NF
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
